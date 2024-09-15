@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dev" class="org.barun.Dev" autowire="byType">
+
+<!--    <bean id="dev" class="org.barun.Dev" autowire="byName">-->
+
+<!--        <property name="com" ref="desk1" />-->
+<!--        <property name="com" ref="lap1" />-->
+
+<!--        <property name="laptop" ref="lap1" />-->
+<!--        <constructor-arg ref="lap1" />-->
+
+    </bean>
+
+    <bean id="com" class="org.barun.Laptop" primary="true">
+    </bean>
+
+    <bean id="com1" class="org.barun.Desktop">
+    </bean>
+
+</beans>
